@@ -1,0 +1,32 @@
+<h1>registro  personas</h1>
+<div class="divider"></div>
+<div class="row">
+    <?=form::open('personas/guardar','post','class="col s12"');?>
+    <div class="row">
+         <div class="input-field col s6">
+               <?php form::text('personas.nombres')?>
+               <?php form::label('Nombres','nombres')?>
+            </div>
+            <div class="input-field col s6">
+               <?php form::text('personas.apellidos')?>
+               <?php form::label('Apellidos','apellidos')?>
+           </div>
+
+            </div>
+        </div>
+        <div class="row">
+        <div class="input-field col s6">
+               <?php form::text('personas.edad')?>
+               <?php form::label('Edad','edad')?>
+          </div>
+          <div class="row">
+             <div class="input-field col s6">
+               <?php form::text('personas.email')?>
+               <?php form::label('Email','email')?>
+          </div>
+          
+          </div>
+          
+        </div>
+    <?= form::close();?>
+</div>
